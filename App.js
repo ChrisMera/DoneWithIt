@@ -1,6 +1,5 @@
+import React from "react";
 // ========= DETECTING ORIENTATION CHANGES LESSON =========== //
-
-// import React from "react";
 // import {
 //   StyleSheet,
 //   Button,
@@ -40,14 +39,9 @@
 //     // alignItems: "center",
 //   },
 // });
-
 // ========= END DETECTING ORIENTATION CHANGES LESSON =========== //
 
 // ========= FLEXBOX LESSON =========== //
-
-// import React from "react";
-// import { View } from "react-native";
-
 // export default function App() {
 //   return (
 //     <View
@@ -77,14 +71,10 @@
 //     </View>
 //   );
 // }
-
 // ========= END FLEXBOX LESSON =========== //
 
 // ========= FLEXBOX DIRECTION LESSON =========== //
 // ReactNative lays up views vertically - aligns the items vertically in a container bc of default portrait position of phone screen
-
-// import React from "react";
-// import { View } from "react-native";
 
 // export default function App() {
 //   return (
@@ -120,14 +110,10 @@
 //     </View>
 //   );
 // }
-
 // ========= END FLEXBOX DIRECTION LESSON =========== //
 
 // ========= FLEXBOX justifyContent, alignItems, and alignSelf LESSON =========== //
 // Aligning items in a container
-
-// import React from "react";
-// import { View } from "react-native";
 
 // export default function App() {
 //   return (
@@ -166,14 +152,10 @@
 //     </View>
 //   );
 // }
-
 // ========= END FLEXBOX justifyContent, alignItems, and alignSelf LESSON =========== //
 
 // ========= FLEXBOX flexWrap, alignContent LESSON =========== //
 // Wrappping items and aligning content
-
-// import React from "react";
-// import { View, SafeAreaView } from "react-native";
 
 // export default function App() {
 //   return (
@@ -228,14 +210,9 @@
 //     </SafeAreaView>
 //   );
 // }
-
 // ========= END FLEXBOX flexWrap, alignContent LESSON =========== //
 
 // ========= FLEXBOX flexBasis, flexGrow and flexShrink LESSON =========== //
-
-// import React from "react";
-// import { View, SafeAreaView } from "react-native";
-
 // export default function App() {
 //   return (
 //     // Container view
@@ -282,9 +259,6 @@
 // ========= ABSOLUTE AND RELATIVE POSITIONING =========== //
 // By default, ReactNative sets all component positions to relative
 
-// import React from "react";
-// import { View, SafeAreaView } from "react-native";
-
 // export default function App() {
 //   return (
 //     // Container view
@@ -328,112 +302,190 @@
 
 // ========= END ABSOLUTE AND RELATIVE POSITIONING LESSON =========== //
 
-import React from "react";
-import { ImageBackground, StyleSheet, Text, View, Image } from "react-native";
+// ========= BORDERS =========== //
+// import { View } from "react-native";
 
-export default App = () => (
-  <View style={styles.container}>
-    <ImageBackground
-      source={require("./assets/background.jpg")}
-      style={styles.backgroundImage}
-    >
-      <View
-        style={{
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Image style={styles.logo} source={require("./assets/logo-red.png")} />
-        <Text>Sell What You Don't Need</Text>
-      </View>
-      <View>
-        <View
-          style={{
-            backgroundColor: "#fc5c65",
-            height: 70,
-          }}
-        ></View>
-        <View
-          style={{
-            backgroundColor: "#4ECDC4",
-            height: 70,
-          }}
-        ></View>
-      </View>
-    </ImageBackground>
-  </View>
-);
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  backgroundImage: {
-    flex: 1,
-    resizeMode: "cover",
-    justifyContent: "space-between",
-    paddingTop: 80,
-  },
-  logo: {
-    height: 100,
-    width: 100,
-  },
-  text: {
-    color: "grey",
-    fontSize: 30,
-    fontWeight: "bold",
-  },
-});
-
-// import React from "react";
-// import {
-//   SafeAreaView,
-//   ImageBackground,
-//   StyleSheet,
-//   Text,
-//   View,
-//   Image,
-//   StatusBar,
-// } from "react-native";
-
-// export default App = () => (
-//   <View style={styles.container}>
-//     <StatusBar backgroundColor="black" barStyle="light-content" />
+// export default function App() {
+//   return (
 //     <View
 //       style={{
-//         flex: 0.4,
-//         backgroundColor: "black",
-//         flexDirection: "row",
-//         justifyContent: "space-between",
-//         paddingLeft: 30,
-//         paddingRight: 30,
-//         paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 40,
+//         flex: 1,
+//         justifyContent: "center",
+//         alignItems: "center",
 //       }}
 //     >
-//       <View style={{ backgroundColor: "#fc5c65", height: 50, width: 50 }} />
-//       <View style={{ backgroundColor: "#4ECDC4", height: 50, width: 50 }} />
+//       <View
+//         style={{
+//           backgroundColor: "dodgerblue",
+//           width: 100,
+//           height: 100,
+//           borderWidth: 10,
+//           borderColor: "royalblue",
+//           borderRadius: 50,
+//         }}
+//       ></View>
 //     </View>
-//     <Image
-//       style={{
-//         // resizeMode: "contain",
-//         width: "auto",
-//         flex: 2,
-//       }}
-//       source={require("./assets/chair.jpg")}
-//     />
-//     <View style={styles.actionRow}></View>
-//   </View>
-// );
+//   );
+// }
+// ========= END BORDERS LESSON =========== //
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     // paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 30,
-//     // justifyContent: "center",
-//     // alignItems: "center",
-//   },
-//   actionRow: {
-//     flex: 0.5,
-//     backgroundColor: "black",
-//   },
-// });
+// ========= SHADOWS =========== //
+// import { View } from "react-native";
+
+// export default function App() {
+//   return (
+//     <View
+//       style={{
+//         flex: 1,
+//         justifyContent: "center",
+//         alignItems: "center",
+//       }}
+//     >
+//       <View
+//         style={{
+//           backgroundColor: "dodgerblue",
+//           width: 100,
+//           height: 100,
+//           // iOS properties
+//           shadowColor: "grey",
+//           shadowOffset: { width: 0, height: 10 },
+//           shadowOpacity: 1,
+//           shadowRadius: 10,
+//           // android properties
+//           elevation: 20,
+//         }}
+//       ></View>
+//     </View>
+//   );
+// }
+// ========= END SHADOWS LESSON =========== //
+
+// ========= PADDINGS & MARGINS =========== //
+// import { View } from "react-native";
+
+// export default function App() {
+//   return (
+//     <View
+//       style={{
+//         flex: 1,
+//         justifyContent: "center",
+//         alignItems: "center",
+//       }}
+//     >
+//       <View
+//         style={{
+//           backgroundColor: "dodgerblue",
+//           width: 100,
+//           height: 100,
+//           padding: 20,
+//           paddingHorizontal: 10,
+//           paddingVertical: 10,
+//         }}
+//       >
+//         <View
+//           style={{
+//             backgroundColor: "gold",
+//             width: 50,
+//             height: 50,
+//           }}
+//         ></View>
+//       </View>
+//       <View
+//         style={{
+//           backgroundColor: "tomato",
+//           width: 100,
+//           height: 100,
+//           margin: 20,
+//         }}
+//       ></View>
+//     </View>
+//   );
+// }
+// ========= END PADDINGS & MARGINS LESSON =========== //
+
+// ========= STYLING TEXT =========== //
+// import { View, Text } from "react-native";
+
+// export default function App() {
+//   return (
+//     <View
+//       style={{
+//         flex: 1,
+//         justifyContent: "center",
+//         alignItems: "center",
+//       }}
+//     >
+//       <Text
+//         style={{
+//           color: "tomato",
+//           fontFamily: "Avenir",
+//           fontSize: 30,
+//           fontStyle: "italic",
+//           fontWeight: "700",
+//           lineHeight: 70,
+//           textAlign: "center",
+//           textTransform: "capitalize",
+//           // textDecorationLine: "line-through",
+//         }}
+//       >
+//         I love React Native. This is my first React Native app. Here's some more
+//         text.
+//       </Text>
+//     </View>
+//   );
+// }
+// ========= END STYLING TEXT LESSON =========== //
+
+// ========= ENCAPSULATING TEXT =========== //
+// import { View } from "react-native";
+
+// import AppText from "./app/components/AppText";
+
+// export default function App() {
+//   return (
+//     <View
+//       style={{
+//         flex: 1,
+//         justifyContent: "center",
+//         alignItems: "center",
+//       }}
+//     >
+//       <AppText
+//         style={{
+//           color: "tomato",
+//           fontFamily: "Avenir",
+//           fontSize: 30,
+//           fontStyle: "italic",
+//           fontWeight: "700",
+//           lineHeight: 70,
+//           textAlign: "center",
+//           textTransform: "capitalize",
+//           // textDecorationLine: "line-through",
+//         }}
+//       >
+//         I love React Native. This is my first React Native app. Here's some more
+//         text.
+//       </AppText>
+//     </View>
+//   );
+// }
+// ========= END ENCAPSULATING TEXT LESSON =========== //
+
+// ========= ICONS =========== //
+import { View } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+
+export default function App() {
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <MaterialCommunityIcons name="email" size={200} color="dodgerblue" />
+    </View>
+  );
+}
+// ========= END ICONS LESSON =========== //
