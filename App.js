@@ -472,8 +472,48 @@ import React from "react";
 // ========= END ENCAPSULATING TEXT LESSON =========== //
 
 // ========= ICONS =========== //
-import { View } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+// import { View } from "react-native";
+// import { MaterialCommunityIcons } from "@expo/vector-icons";
+
+// export default function App() {
+//   return (
+//     <View
+//       style={{
+//         flex: 1,
+//         justifyContent: "center",
+//         alignItems: "center",
+//       }}
+//     >
+//       <MaterialCommunityIcons name="email" size={200} color="dodgerblue" />
+//     </View>
+//   );
+// }
+// ========= END ICONS LESSON =========== //
+
+// ========= PLATFORM SPECIFIC CODE =========== //
+// import { View } from "react-native";
+
+// import AppText from "./app/components/AppText";
+
+// export default function App() {
+//   return (
+//     <View
+//       style={{
+//         flex: 1,
+//         justifyContent: "center",
+//         alignItems: "center",
+//       }}
+//     >
+//       <AppText>
+//         I love React Native. This is my first React Native app. Here's some more
+//         text.
+//       </AppText>
+//     </View>
+//   );
+// }
+// ========= END PLATFORM SPECIFIC CODE LESSON =========== //
+import { View, Button } from "react-native";
+import AppButton from "./app/components/AppButton";
 
 export default function App() {
   return (
@@ -484,8 +524,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <MaterialCommunityIcons name="email" size={200} color="dodgerblue" />
+      <Button title="Login" />
     </View>
   );
 }
-// ========= END ICONS LESSON =========== //
