@@ -512,7 +512,7 @@ import React from "react";
 //   );
 // }
 // ========= END PLATFORM SPECIFIC CODE LESSON =========== //
-import { View, Button } from "react-native";
+import { View } from "react-native";
 import AppButton from "./app/components/AppButton";
 
 export default function App() {
@@ -521,10 +521,12 @@ export default function App() {
       style={{
         flex: 1,
         justifyContent: "center",
-        alignItems: "center",
+        // marginHorizontal: 16,
       }}
     >
-      <Button title="Login" />
+      <View>
+        <AppButton>LOGIN</AppButton>
+      </View>
     </View>
   );
 }
