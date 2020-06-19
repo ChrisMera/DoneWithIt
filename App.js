@@ -513,7 +513,7 @@ import React from "react";
 // }
 // ========= END PLATFORM SPECIFIC CODE LESSON =========== //
 import { View } from "react-native";
-import AppButton from "./app/components/AppButton";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 export default function App() {
   return (
@@ -524,9 +524,7 @@ export default function App() {
         // marginHorizontal: 16,
       }}
     >
-      <View>
-        <AppButton>LOGIN</AppButton>
-      </View>
+      <WelcomeScreen />
     </View>
   );
 }
