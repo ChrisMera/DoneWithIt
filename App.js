@@ -513,18 +513,10 @@ import React from "react";
 // }
 // ========= END PLATFORM SPECIFIC CODE LESSON =========== //
 import { View } from "react-native";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
+
+import Card from "./app/components/Card.js";
+import ViewImageScreen from "./app/screens/ViewImageScreen.js";
 
 export default function App() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        // marginHorizontal: 16,
-      }}
-    >
-      <WelcomeScreen />
-    </View>
-  );
+  return <ViewImageScreen />;
 }

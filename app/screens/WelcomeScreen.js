@@ -14,7 +14,7 @@ import AppButton from "../components/AppButton.android";
 const WelcomeScreen = () => {
   return (
     <ImageBackground
-      blurRadius={Platform.OS === "android" ? 2 : 6}
+      blurRadius={Platform.OS === "android" ? 2 : 9}
       style={styles.background}
       source={require("../assets/background.jpg")}
     >
