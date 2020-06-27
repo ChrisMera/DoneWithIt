@@ -512,11 +512,24 @@ import React from "react";
 //   );
 // }
 // ========= END PLATFORM SPECIFIC CODE LESSON =========== //
+
+// ========= FLATLIST =========== //
 import { View } from "react-native";
 
-import Card from "./app/components/Card.js";
-import ViewImageScreen from "./app/screens/ViewImageScreen.js";
+import AppText from "./app/components/AppText";
+import Screen from "./app/components/Screen";
+import Icon from "./app/components/Icon";
+import ListItem from "./app/components/ListItem";
 
 export default function App() {
-  return <ViewImageScreen />;
+  return (
+    <Screen>
+      <ListItem
+        title="My title"
+        subTitle="My subtitle"
+        ImageComponent={<Icon name="email" />}
+      />
+    </Screen>
+  );
 }
+// ========= END FLATLIST LESSON =========== //
