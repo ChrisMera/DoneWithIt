@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import LoginScreen from "./app/screens/LoginScreen";
 import RegisterScreen from "./app/screens/RegisterScreen";
+import ListingEditScreen from "./app/screens/ListingEditScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 // ========= DETECTING ORIENTATION CHANGES LESSON =========== //
 // import {
 //   StyleSheet,
@@ -518,6 +520,6 @@ import RegisterScreen from "./app/screens/RegisterScreen";
 // ========= FLATLIST =========== //
 
 export default function App() {
-  return <RegisterScreen />;
+  return <ListingEditScreen />;
 }
 // ========= END FLATLIST LESSON =========== //
