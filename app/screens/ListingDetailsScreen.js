@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, StyleSheet } from "react-native";
 
-import AppText from "../components/AppText";
+import Text from "../components/Text";
 import ListItem from "../components/ListItem";
 import colors from "../config/colors";
 
@@ -10,8 +10,8 @@ const ListingDetailsScreen = () => {
     <View>
       <Image style={styles.image} source={require("../assets/jacket.jpg")} />
       <View style={styles.detailsContainer}>
-        <AppText style={styles.title}>Red Jacket For Sale</AppText>
-        <AppText style={styles.price}>$100</AppText>
+        <Text style={styles.title}>Red Jacket For Sale</Text>
+        <Text style={styles.price}>$100</Text>
         <View style={styles.userContainer}>
           <ListItem
             image={require("../assets/mosh.jpg")}

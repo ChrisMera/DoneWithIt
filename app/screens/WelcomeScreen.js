@@ -9,7 +9,7 @@ import {
 } from "react-native";
 
 import colors from "../config/colors";
-import AppButton from "../components/AppButton.android";
+import Button from "../components/Button";
 
 const WelcomeScreen = () => {
   return (
@@ -23,8 +23,8 @@ const WelcomeScreen = () => {
         <Text style={styles.tagline}>Sell What You Don't Need</Text>
       </View>
       <View style={styles.buttonContainer}>
-        <AppButton title="LOGIN" onPress={() => console.log("Tapped")} />
-        <AppButton
+        <Button title="LOGIN" onPress={() => console.log("Tapped")} />
+        <Button
           title="REGISTER"
           color="secondary"
           onPress={() => console.log("Tapped")}

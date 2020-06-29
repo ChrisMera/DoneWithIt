@@ -3,7 +3,7 @@ import { View, Image, StyleSheet, TouchableHighlight } from "react-native";
 import Swipeable from "react-native-gesture-handler/Swipeable";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import AppText from "../AppText";
+import Text from "../Text";
 import colors from "../../config/colors";
 
 const ListItem = ({
@@ -23,13 +23,13 @@ const ListItem = ({
           {IconComponent}
           {image && <Image style={styles.image} source={image} />}
           <View style={styles.detailsContainer}>
-            <AppText numberOfLines={1} style={styles.title}>
+            <Text numberOfLines={1} style={styles.title}>
               {title}
-            </AppText>
+            </Text>
             {subTitle && (
-              <AppText numberOfLines={2} style={styles.subTitle}>
+              <Text numberOfLines={2} style={styles.subTitle}>
                 {subTitle}
-              </AppText>
+              </Text>
             )}
           </View>
           {showChevron && (

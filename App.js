@@ -520,6 +520,6 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 // ========= FLATLIST =========== //
 
 export default function App() {
-  return <ListingEditScreen />;
+  return <RegisterScreen />;
 }
 // ========= END FLATLIST LESSON =========== //
