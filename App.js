@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import LoginScreen from "./app/screens/LoginScreen";
-import RegisterScreen from "./app/screens/RegisterScreen";
-import ListingEditScreen from "./app/screens/ListingEditScreen";
-import MessagesScreen from "./app/screens/MessagesScreen";
+import React, { useState, useEffect } from "react";
+import Screen from "./app/components/Screen";
 // ========= DETECTING ORIENTATION CHANGES LESSON =========== //
 // import {
 //   StyleSheet,
@@ -518,8 +515,36 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 // ========= END PLATFORM SPECIFIC CODE LESSON =========== //
 
 // ========= FLATLIST =========== //
+import * as ImagePicker from "expo-image-picker";
+import { Button, Image } from "react-native";
 
 export default function App() {
-  return <RegisterScreen />;
+  const [imageUri, setImageUri] = useState();
+
+  const requestPermission = async () => {
+    const { granted } = await ImagePicker.requestCameraRollPermissionsAsync();
+    if (!granted) {
+      alert("You need to enable permission to access");
+    }
+  };
+
+  const selectImage = async () => {
+    try {
+      const result = await ImagePicker.launchImageLibraryAsync();
+      if (!result.cancelled) setImageUri(result.uri);
+    } catch (error) {
+      console.log("error reading an image", error);
+    }
+  };
+
+  useEffect(() => {
+    requestPermission();
+  }, []);
+  return (
+    <Screen>
+      <Button title="Select Image" onPress={selectImage} />
+      <Image source={{ uri: imageUri }} style={{ width: 200, height: 200 }} />
+    </Screen>
+  );
 }
 // ========= END FLATLIST LESSON =========== //
