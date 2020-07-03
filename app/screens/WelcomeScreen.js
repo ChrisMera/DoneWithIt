@@ -8,10 +8,10 @@ import {
   Platform,
 } from "react-native";
 
-import colors from "../config/colors";
 import Button from "../components/Button";
+import routes from "../navigation/routes";
 
-const WelcomeScreen = () => {
+const WelcomeScreen = ({ navigation }) => {
   return (
     <ImageBackground
       blurRadius={Platform.OS === "android" ? 2 : 9}
@@ -23,11 +23,14 @@ const WelcomeScreen = () => {
         <Text style={styles.tagline}>Sell What You Don't Need</Text>
       </View>
       <View style={styles.buttonContainer}>
-        <Button title="LOGIN" onPress={() => console.log("Tapped")} />
+        <Button
+          title="LOGIN"
+          onPress={() => navigation.navigate(routes.LOGIN)}
+        />
         <Button
           title="REGISTER"
           color="secondary"
-          onPress={() => console.log("Tapped")}
+          onPress={() => navigation.navigate(routes.REGISTER)}
         />
       </View>
     </ImageBackground>
