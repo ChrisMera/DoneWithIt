@@ -1,5 +1,4 @@
 import React from "react";
-import Screen from "./app/components/Screen";
 // ========= DETECTING ORIENTATION CHANGES LESSON =========== //
 // import {
 //   StyleSheet,
@@ -515,6 +514,7 @@ import Screen from "./app/components/Screen";
 // ========= END PLATFORM SPECIFIC CODE LESSON =========== //
 
 // ========= FLATLIST =========== //
+
 import { NavigationContainer } from "@react-navigation/native";
 import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
