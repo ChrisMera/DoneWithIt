@@ -10,6 +10,7 @@ import FeedNavigator from "./FeedNavigator";
 import ListingEditScreen from "../screens/ListingEditScreen";
 import NewListingButton from "./NewListingButton";
 import routes from "../navigation/routes";
+import navigation from "./rootNavigation";
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +19,7 @@ const AppNavigator = () => {
     registerForPushNotifications();
 
     Notifications.addListener((notification) => {
-      navigation;
+      navigation.navigate("Account");
     });
   }, []);
 
